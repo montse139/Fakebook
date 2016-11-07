@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html>
+{% extends "main.html" %}
 
-  <head>
-    <title>Montse's Fakebook</title>
-    <meta name="description" content="My first coding test">
-    <meta name="keywords" content="Montse, HTML, coding, Fakebook, Smartninja">
-    <meta name="author" content="Montse Gomez">
-    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
-  </head>
+{% block title %}About Me{% endblock title %}
 
-  <body>
-    <div id="header">
-      <h4> FAKEBOOK </h4>
-      <div id="navbar">
-        <div id="nav">
-
-          <ol>
-            <li> Home </li>
-            <li> Pictures </li>
-            <li> Information </li>
-            <li> Friends </li>
-          </ol>
-        </div>
-
-      </div>
-    </div>
-
+{% block page_content %}
     <div id="left">
 
       <h2>Montse Gomez</h2>
@@ -69,12 +46,7 @@
 
 
     <div id="right">
-      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/418332_10150651360682431_130424496_n.jpg?oh=f350d846fe1837674cbf96c2d4e367e3&oe=58119E5C&__gda__=1481042027_685e62b2dee0f326f70b21ba47be6a23" />
-
+      <img src="assets/me.jpg">
       
     </div>
-
-  </body>
-
-</html>
-# Fakebook
+{% endblock page_content %}
